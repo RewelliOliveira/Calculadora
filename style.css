@@ -1,0 +1,59 @@
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left,#4ECA33,#789CD7, #8608BB);
+}
+.calculadora-corpo {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.3);
+    margin-top: 50px;
+
+}
+
+/* Estilos adicionais para os botões e visor, se necessário */
+.visor {
+    text-align: right;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.calculadora-botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes-linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.botoes-geral {
+    flex: 1;
+    margin: 5px;
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Dosis',sans-serif;
+    font-weight: bold;
+    background-color: #d0d0d0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botoes-geral:hover {
+    background-color:inherit;
+}

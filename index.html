@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="format.css">
+</head>
+<body>
+    <div class="calculadora-corpo">
+        <section class="visor" id="visor">0</section>
+        <section class="calculadora-botoes">
+            <div class="botoes-linha">
+                <button class="botoes-geral" onclick="limpar()">C</button>
+                <button class="botoes-geral" onclick="backspace()">&larr;</button>
+                <button class="botoes-geral" onclick="insert('/')"> &divide; </button>
+            </div>
+            <div class="botoes-linha">
+                <button class="botoes-geral" onclick="insert('7')">7</button>
+                <button class="botoes-geral" onclick="insert('8')">8</button>
+                <button class="botoes-geral" onclick="insert('9')">9</button>
+                <button class="botoes-geral" onclick="insert('*')">&times;</button>
+            </div>
+            <div class="botoes-linha">
+                <button class="botoes-geral" onclick="insert('4')">4</button>
+                <button class="botoes-geral" onclick="insert('5')">5</button>
+                <button class="botoes-geral" onclick="insert('6')">6</button>
+                <button class="botoes-geral" onclick="insert('-')">&minus;</button>
+            </div>
+            <div class="botoes-linha">
+                <button class="botoes-geral" onclick="insert('1')">1</button>
+                <button class="botoes-geral" onclick="insert('2')">2</button>
+                <button class="botoes-geral" onclick="insert('3')">3</button>
+                <button class="botoes-geral" onclick="insert('+')">+</button>
+            </div>
+            <div class="botoes-linha">
+                <button class="botoes-geral" onclick="insert('0')">0</button>
+                <button class="botoes-geral" onclick="calcular()">&equals;</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
